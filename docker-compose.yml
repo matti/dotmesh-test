@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  loop:
+    build: .
+    volumes:
+      - loop-data:/data
+
+volumes:
+  loop-data:
+    driver: dm
